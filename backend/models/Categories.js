@@ -1,24 +1,48 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const categorySchema = new mongoose.Schema({
   img: {
     type: String,
     required: true,
   },
-  link: {
+  headerTxt: {
     type: String,
-    required: true,
+    default: "",
   },
-  alt: {
+  bodyTxt: {
     type: String,
-    required: true,
+    default: "",
   },
-  redirectLink: {
+  discountInPersent: {
+    type: Number,
+    default: null,
+  },
+  discountAmt: {
+    type: Number,
+    default: null,
+  },
+  minDiscount: {
+    type: Number,
+    default: null,
+  },
+  maxDiscount: {
+    type: Number,
+    default: null,
+  },
+  minOrderAmt: {
+    type: Number,
+    default: null,
+  },
+  maxOrderAmt: {
+    type: Number,
+    default: null,
+  },
+  currency: {
     type: String,
-    required: true,
+    default: "",
   },
 });
 
-const Category = mongoose.model('Category', categorySchema);
+const Category = mongoose.model("Category", categorySchema);
 
 module.exports = Category;

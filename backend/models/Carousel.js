@@ -1,18 +1,46 @@
 const mongoose = require('mongoose');
 
 const carouselSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true
-  },
   img: {
     type: String,
-    required: true
+    required: true,
   },
-  link: {
+  headerTxt: {
     type: String,
-    required: true
-  }
+    default: "",
+  },
+  bodyTxt: {
+    type: String,
+    default: "",
+  },
+  discountInPersent: {
+    type: Number,
+    default: null,
+  },
+  discountAmt: {
+    type: Number,
+    default: null,
+  },
+  minDiscount: {
+    type: Number,
+    default: null,
+  },
+  maxDiscount: {
+    type: Number,
+    default: null,
+  },
+  minOrderAmt: {
+    type: Number,
+    default: null,
+  },
+  maxOrderAmt: {
+    type: Number,
+    default: null,
+  },
+  currency: {
+    type: String,
+    default: "",
+  },
 });
 
 const Carousel = mongoose.model('Carousel', carouselSchema);

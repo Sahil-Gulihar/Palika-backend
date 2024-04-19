@@ -1,12 +1,8 @@
 const mongoose = require("mongoose");
 
-
 const connectDatabase = () => {
-  const MONGOURL = "mongodb://localhost:27017";
-
-  mongoose.connect(MONGOURL, {
-    useNewUrlParser: true,
-    
+  mongoose.connect(process.env.MONGOURL, {
+    // useNewUrlParser: true,
   });
 
   mongoose.connection.on("connected", () => {
@@ -22,4 +18,4 @@ const connectDatabase = () => {
   });
 };
 
-module.exports =  connectDatabase;
+module.exports = connectDatabase;

@@ -1,22 +1,22 @@
-import Carousel from "./Carousel";
-import Category from "./Categories";
-import Coupon from "./Coupons";
-import connectDatabase from "../config/database";
+const connectDatabase = require("../config/database");
+const Carousel = require("./Carousel");
+const Category = require("./Categories");
+const Coupon = require("./Coupons");
 
-export const createCarousel = async (carouselData) => {
+exports.createCarousel = async (carouselData) => {
     await connectDatabase();
     const newCarousel = new Carousel(carouselData);
     await newCarousel.save();
-  };
-  
-  export const createCategory = async (categoryData) => {
+};
+
+exports.createCategory = async (categoryData) => {
     await connectDatabase();
     const newCategory = new Category(categoryData);
     await newCategory.save();
-  };
-  
-  export const createCoupon = async (couponData) => {
+};
+
+exports.createCoupon = async (couponData) => {
     await connectDatabase();
     const newCoupon = new Coupon(couponData);
     await newCoupon.save();
-  };
+};

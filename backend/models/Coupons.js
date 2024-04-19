@@ -1,19 +1,46 @@
 const mongoose = require('mongoose');
 
 const couponSchema = new mongoose.Schema({
-  title: {
-    type: String,
-    required: true
-  },
-  successRate: {
-    type: Number,
-    required: true
-  },
   img: {
     type: String,
-    required: true
+    required: true,
   },
-  // Add any other fields you need for your coupons
+  headerTxt: {
+    type: String,
+    default: "",
+  },
+  bodyTxt: {
+    type: String,
+    default: "",
+  },
+  discountInPersent: {
+    type: Number,
+    default: null,
+  },
+  discountAmt: {
+    type: Number,
+    default: null,
+  },
+  minDiscount: {
+    type: Number,
+    default: null,
+  },
+  maxDiscount: {
+    type: Number,
+    default: null,
+  },
+  minOrderAmt: {
+    type: Number,
+    default: null,
+  },
+  maxOrderAmt: {
+    type: Number,
+    default: null,
+  },
+  currency: {
+    type: String,
+    default: "",
+  },
 });
 
 const Coupon = mongoose.model('Coupon', couponSchema);
