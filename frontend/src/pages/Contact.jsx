@@ -60,7 +60,7 @@ export default function Contact() {
                   />
                 </svg>
                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                  +19 000000000
+                  +91 7717587717
                 </div>
               </div>
 
@@ -82,7 +82,7 @@ export default function Contact() {
                   />
                 </svg>
                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                  example@email.com
+                Support@offerpalika.com
                 </div>
               </div>
             </div>
