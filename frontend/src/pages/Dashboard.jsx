@@ -25,7 +25,7 @@ export const Dashboard = () => {
 
       <div className="grid grid-cols-12 p-4 bg-blue-100">
         <img
-          src="https://www.offerpalika.com/images/about.jpg"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRupvrM7cq5yFE1ZkPjRtZGIUWYIqBipJNxbo0xjwDXYQ&s"
           className="h-[20vh] col-span-5 gap-2"
           alt="lol"
         />

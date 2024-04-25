@@ -11,11 +11,11 @@ export const Categories = () => {
         <Header />
         <Navbar />
       </div>
-      <img
+      {/* <img
         src="https://www.offerpalika.com/images/about.webp"
         className=""
         alt="wow"
-      />
+      /> */}
 
       <Cards />
       <CategorySlider />

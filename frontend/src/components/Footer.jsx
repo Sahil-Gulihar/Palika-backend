@@ -30,13 +30,13 @@ export const Footer = () => {
           </div>
           <div className="md:p-3">
             <div className="text-slate-300 text-base ">
-              Phone: +1 (0) 000 0000 001
+              Phone: +91 7717587717
             </div>
             <div className="text-slate-300 text-base">
               <span className="hidden md:inline">
-                Email: yourmail@example.com
+                Email: Support@offerpalika.com
               </span>
-              <span className="md:hidden">Email: mail@gmail.com</span>
+              <span className="md:hidden">Email: Support@offerpalika.com</span>
             </div>
 
             <div className="text-slate-300 text-base ">
